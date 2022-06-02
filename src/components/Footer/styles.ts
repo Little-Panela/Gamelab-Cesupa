@@ -1,0 +1,75 @@
+import styled from "styled-components";
+
+export const FooterContainer = styled.footer`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 122px 0 108px;
+  font-family: "Roboto", sans-serif;
+
+  min-height: 268px;
+  max-height: 100%;
+
+  background: var(--background);
+
+  @media (max-width: 768px) {
+    justify-content: space-around;
+  }
+`;
+
+export const Copyright = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .1rem;
+
+  a {
+    text-decoration: none;
+    color: var(----title-font);
+    margin-top: .5rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    text-align: left;
+    a{
+      text-decoration: underline;
+      text-underline-offset: 5px;
+    }
+    &:hover a {
+      width: 100%;
+      color: red;
+      transition: all 0.2s ease-in;
+    }
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    color: var(--text-secondary);
+    font-weight: 500;
+    font-size: 2rem;
+    img {
+      margin-right: 0.375rem;
+      height: 3.4rem;
+      margin-bottom: .5rem;
+    }
+
+    @media (max-width: 768px) {
+      p {
+        text-align: center;
+      }
+    }
+  }
+`;
+
+export const SocialMedia = styled.div`
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+`;
