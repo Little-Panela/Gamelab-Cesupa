@@ -3,16 +3,16 @@ import {
   IntroductionContent,
   LeftHome,
   IntroductionContentContainer,
+  Divider,
 } from "./styles";
 
 import { Navbar } from '../../components/Navbar'
+import { About } from "../../components/AboutSection";
 import { Footer } from "../../components/Footer";
 
 import gammingAnimate from "../../assets/gaming-animate.svg"
 
 import { Link } from "react-scroll";
-
-import { About } from "../../components/AboutSection";
 
 export interface Project {
   _id: string;
@@ -49,7 +49,9 @@ export function Main() {
             <img src={gammingAnimate} title="Computer illustrations by Storyset" alt="ilustração" />
           </IntroductionContentContainer>
         </IntroductionContent>
+        < Divider/>
         <About />
+        < Divider/>
       </main>
       <Footer />
     </Container>

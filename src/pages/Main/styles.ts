@@ -126,4 +126,9 @@ export const LeftHome = styled.div`
   }
 `;
 
+export const Divider = styled.div`
+  height: 1px;
+  background: linear-gradient(270deg, #14213D 0%, rgba(21, 168, 202, 0.34) 50%, #14213D 100%);
+  transform: matrix(-1, 0, 0, 1, 0, 0);;
+`
 

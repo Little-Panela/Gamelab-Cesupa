@@ -12,6 +12,7 @@ export const AboutContent = styled.div`
 
   img {
     margin: 0.5rem 0 0.75rem 0;
+    width: 100%;
   }
 
   img:nth-child(4) {
