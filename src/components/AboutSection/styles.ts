@@ -17,18 +17,11 @@ export const AboutContent = styled.div`
   img:nth-child(4) {
     margin-top: 55px;
   }
-
-  h1 {
-    font-weight: 700;
-    font-size: 36px;
-
-    color: var(--title-font);
-  }
-
+  
   div {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
+   
     margin-top: 21px;
 
     gap: 59px;
@@ -46,7 +39,14 @@ export const AboutRight = styled.div`
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin: 0 2rem 3rem 2rem;
+
+  h1 {
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--title-font);
+  }
 
   p {
     font-family: "Poppins";
@@ -66,7 +66,7 @@ export const AboutLeft = styled.div`
   flex-wrap: wrap;
   flex-direction: column;
 
-  //Deixar Responsivel
+
   img {
     min-width: 100%;
     max-width: 100%;

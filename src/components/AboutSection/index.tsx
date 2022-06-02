@@ -4,17 +4,17 @@ import { Element } from "react-scroll";
 
 import equipe_gamelab from "../../assets/equipe_gamelab.svg"
 import aula_gamelab from "../../assets/aula_gamelab.svg"
+import divider from "../../assets/divider.svg"
 
 export function About() {
   return (
     <AboutContent>
       <Element name="about"></Element>
-      <img src="" alt="" />
-      <h1>Sobre Nós</h1>
+      <img src={divider} />
+      
       <div>
       <AboutLeft>
-          {/* Organizar as fotos  */}
-          <img src={equipe_gamelab} alt="Foto dos Ganhadores" />
+          <img src={equipe_gamelab} alt="Equipe Gamelab" />
           <img
             src={aula_gamelab}
             alt="Foto dos Ganhadores"
@@ -22,7 +22,7 @@ export function About() {
           />
         </AboutLeft>
         <AboutRight>
-
+          <h1>Sobre Nós</h1>
           <p>
           Quisque id aliquam elit. Suspendisse congue pharetra maximus. Duis rutrum velit a leo euismod dictum. Sed sodales est efficitur arcu tincidunt tincidunt. Curabitur fringilla, risus at feugiat feugiat, nisl nulla tincidunt tellus, elementum elementum lorem nisl eleifend dolor. Nullam eget dui at sem ullamcorper luctus.
             <br />
@@ -32,7 +32,7 @@ export function About() {
           </p>
         </AboutRight>
       </div>
-      <img src="" alt="" />
+      <img src={divider} />
       <Element name=""></Element>
     </AboutContent>
   );
