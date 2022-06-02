@@ -11,7 +11,7 @@ export const FooterContainer = styled.footer`
   min-height: 268px;
   max-height: 100%;
 
-  background: var(--background);
+  background: var(--button);
 
   @media (max-width: 768px) {
     justify-content: space-around;
