@@ -8,6 +8,7 @@ import {
 
 import { Navbar } from "../../components/Navbar";
 import { About } from "../../components/AboutSection";
+import { ProjectSection } from "../../components/Projects";
 import { Contact } from "../../components/ContactSection";
 import { Footer } from "../../components/Footer";
 
@@ -58,6 +59,8 @@ export function Main() {
         </IntroductionContent>
         <Divider />
         <About />
+        <Divider />
+        <ProjectSection />
         <Divider />
         <Contact />
         <Divider />
