@@ -124,6 +124,34 @@ export const LeftHome = styled.div`
   @media screen and (max-width: 1203px) {
     margin-top: 3rem;
   }
+  @media (max-width: 768px) {
+    
+    align-items: center;
+    text-align: center;
+
+    h1 {
+    font-weight: 700;
+    font-size: 5rem;
+
+    text-shadow: 2px 2px 8px #00000099;
+    width: auto;
+  }
+
+  span {
+    font-weight: 700;
+    color: var(--text-font);
+    font-size: 5rem;
+    text-shadow: 2px 2px 8px #00000081;
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 8px #00000099;
+    width: auto;
+  }
+  }
 `;
 
 export const Divider = styled.div`

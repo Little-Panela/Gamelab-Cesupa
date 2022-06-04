@@ -41,6 +41,7 @@ export default createGlobalStyle`
     }
     input, textarea, button, p {
         font-family: 'Poppins', sans-serif;
+        color: var(--text-secondary);
         font-weight: 400;
     }
     h1 {

@@ -9,6 +9,7 @@ export const AboutContent = styled.div`
 
   text-align: center;
   align-items: center;
+  justify-content: center;
 
   img {
     margin: 0.5rem 0 0.75rem 0;
@@ -25,7 +26,7 @@ export const AboutContent = styled.div`
    
     margin-top: 21px;
 
-    gap: 59px;
+    gap: 40px;
   }
 
   @media only screen and (max-width: 1200px) {
@@ -35,7 +36,7 @@ export const AboutContent = styled.div`
   }
 `;
 
-export const AboutRight = styled.div`
+export const AboutLeft = styled.div`
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -45,28 +46,34 @@ export const AboutRight = styled.div`
 
   h1 {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 3rem;
     color: var(--title-font);
   }
 
   p {
     font-family: "Poppins";
     font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 1.1rem;
+    line-height: 1.40rem;
     margin: 0 2rem 3rem 2rem;
 
     max-width: 36.5rem;
 
     color: var(--title-font);
   }
+
+  @media (max-width: 768px) {
+    margin-bottom: 0;
+  }
 `;
 
-export const AboutLeft = styled.div`
+export const AboutRight = styled.div`
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 
+  align-items: center;
+  justify-content: center;
 
   img {
     min-width: 100%;

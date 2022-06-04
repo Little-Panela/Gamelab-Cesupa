@@ -22,27 +22,33 @@ export const Copyright = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: .1rem;
-
-  a {
-    text-decoration: none;
-    color: var(----title-font);
-    margin-top: .5rem;
-  }
+  gap: 0.1rem;
 
   p {
     font-size: 0.8rem;
     color: var(--text-secondary);
     text-align: left;
     a{
-      text-decoration: underline;
-      text-underline-offset: 5px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.2s ease-in;
+    span {
+      width: 0;
+      height: 2px;
+      background-color: red;
+      transition: width 0.2s;
     }
-    &:hover a {
+
+    &:hover span {
       width: 100%;
-      color: red;
-      transition: all 0.2s ease-in;
     }
+    }
+    @media (max-width: 768px) {
+    text-align: center;
+  }
   }
 
   div {
@@ -55,9 +61,8 @@ export const Copyright = styled.div`
     font-weight: 500;
     font-size: 2rem;
     img {
-      margin-right: 0.375rem;
       height: 3.4rem;
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
     }
 
     @media (max-width: 768px) {

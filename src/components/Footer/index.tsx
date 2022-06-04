@@ -21,6 +21,7 @@ export function Footer() {
             rel="noreferrer"
           >
             Feito com ♡ por Ryan Oliveira
+            <span />
           </a>
         </p>
       </Copyright>

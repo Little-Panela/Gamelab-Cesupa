@@ -6,11 +6,12 @@ import {
   Divider,
 } from "./styles";
 
-import { Navbar } from '../../components/Navbar'
+import { Navbar } from "../../components/Navbar";
 import { About } from "../../components/AboutSection";
+import { Contact } from "../../components/ContactSection";
 import { Footer } from "../../components/Footer";
 
-import gammingAnimate from "../../assets/gaming-animate.svg"
+import gammingAnimate from "../../assets/gaming-animate.svg";
 
 import { Link } from "react-scroll";
 
@@ -33,9 +34,11 @@ export function Main() {
         <IntroductionContent>
           <IntroductionContentContainer>
             <LeftHome>
-            <Link to="home" smooth={true}>
-              <h1>Game<span>Lab</span></h1>
-              <h2>Grupo de Desenvolvimento de Games do CESUPA.</h2>
+              <Link to="home" smooth={true}>
+                <h1>
+                  Game<span>Lab</span>
+                </h1>
+                <h2>Grupo de Desenvolvimento de Games do CESUPA.</h2>
               </Link>
               <div>
                 <Link to="" smooth={true}>
@@ -46,13 +49,20 @@ export function Main() {
                 </Link>
               </div>
             </LeftHome>
-            <img src={gammingAnimate} title="Computer illustrations by Storyset" alt="ilustração" />
+            <img
+              src={gammingAnimate}
+              title="Computer illustrations by Storyset"
+              alt="ilustração"
+            />
           </IntroductionContentContainer>
         </IntroductionContent>
-        < Divider/>
+        <Divider />
         <About />
-        < Divider/>
+        <Divider />
+        <Contact />
+        <Divider />
       </main>
+
       <Footer />
     </Container>
   );
