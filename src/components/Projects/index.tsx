@@ -28,10 +28,8 @@ export function ProjectSection(): JSX.Element {
   return (
     <>
       <Element name="Projects"></Element>
-
       <Container>
         <h1>Lista de Jogos</h1>
-
         <ProjectsContainer>
           <div className="container">
             {Project.map((Project) => (

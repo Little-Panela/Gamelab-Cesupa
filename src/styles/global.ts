@@ -39,10 +39,15 @@ export default createGlobalStyle`
         background: #fff;
         -webkit-font-smoothing: antialiased;
     }
-    input, textarea, button, p {
+      textarea, button, p {
         font-family: 'Poppins', sans-serif;
         color: var(--text-secondary);
         font-weight: 400;
+    }
+    input{
+        font-family: 'Poppins', sans-serif;
+        color: black;
+        font-weight: 400; 
     }
     h1 {
         font-family: "Roboto", -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;

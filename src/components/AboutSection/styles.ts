@@ -45,9 +45,7 @@ export const AboutLeft = styled.div`
   margin: 0 2rem 3rem 2rem;
 
   h1 {
-    font-weight: 700;
-    font-size: 3rem;
-    color: var(--title-font);
+    font-size: 2.5rem;
   }
 
   p {

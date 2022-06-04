@@ -91,8 +91,6 @@ export const LeftHome = styled.div`
     margin-bottom: 2rem;
     text-shadow: 2px 2px 8px #00000099;
     width: 24ch;
-
-  
   }
 
   button {
@@ -125,38 +123,41 @@ export const LeftHome = styled.div`
     margin-top: 3rem;
   }
   @media (max-width: 768px) {
-    
     align-items: center;
     text-align: center;
 
     h1 {
-    font-weight: 700;
-    font-size: 5rem;
+      font-weight: 700;
+      font-size: 5rem;
 
-    text-shadow: 2px 2px 8px #00000099;
-    width: auto;
-  }
+      text-shadow: 2px 2px 8px #00000099;
+      width: auto;
+    }
 
-  span {
-    font-weight: 700;
-    color: var(--text-font);
-    font-size: 5rem;
-    text-shadow: 2px 2px 8px #00000081;
-  }
+    span {
+      font-weight: 700;
+      color: var(--text-font);
+      font-size: 5rem;
+      text-shadow: 2px 2px 8px #00000081;
+    }
 
-  h2 {
-    font-weight: 700;
-    font-size: 1rem;
-    margin-bottom: 2rem;
-    text-shadow: 2px 2px 8px #00000099;
-    width: auto;
-  }
+    h2 {
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      text-shadow: 2px 2px 8px #00000099;
+      width: auto;
+    }
   }
 `;
 
 export const Divider = styled.div`
   height: 1px;
-  background: linear-gradient(270deg, #14213D 0%, rgba(21, 168, 202, 0.34) 50%, #14213D 100%);
-  transform: matrix(-1, 0, 0, 1, 0, 0);;
-`
-
+  background: linear-gradient(
+    270deg,
+    #14213d 0%,
+    rgba(21, 168, 202, 0.34) 50%,
+    #14213d 100%
+  );
+  transform: matrix(-1, 0, 0, 1, 0, 0); ;
+`;

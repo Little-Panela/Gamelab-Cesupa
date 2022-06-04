@@ -8,6 +8,7 @@ import {
 
 import { Navbar } from "../../components/Navbar";
 import { About } from "../../components/AboutSection";
+import { Team } from "../../components/TeamSection";
 import { ProjectSection } from "../../components/Projects";
 import { Contact } from "../../components/ContactSection";
 import { Footer } from "../../components/Footer";
@@ -31,7 +32,7 @@ export function Main() {
   return (
     <Container>
       <main>
-      <Element name="Home"></Element>
+        <Element name="Home"></Element>
         <Navbar />
         <IntroductionContent>
           <IntroductionContentContainer>
@@ -60,6 +61,8 @@ export function Main() {
         </IntroductionContent>
         <Divider />
         <About />
+        <Divider />
+        <Team />
         <Divider />
         <ProjectSection />
         <Divider />
