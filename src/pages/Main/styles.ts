@@ -96,7 +96,7 @@ export const LeftHome = styled.div`
   }
 
   button {
-    width: 10.25rem;
+    width: 11.3rem;
     height: 3rem;
     background: var(--button);
     border-radius: 1.563rem;

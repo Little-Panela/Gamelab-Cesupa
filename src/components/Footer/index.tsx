@@ -1,6 +1,6 @@
 import { FooterContainer, Copyright, SocialMedia } from "./styles";
 
-import logo from "../../assets/logo-gamelab.png"
+import logo from "../../assets/logo-gamelab.png";
 import logoInstagram from "../../assets/logoInstagram.svg";
 import logoFacebook from "../../assets/logoFacebook.svg";
 import logoYoutube from "../../assets/logoYoutube.svg";
@@ -15,11 +15,7 @@ export function Footer() {
         <p>©2022 - Cesupa GameLab</p>
         <p>Todos os direitos reservados.</p>
         <p>
-          <a
-            href="https://www.ryanolivr.dev/"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://www.ryanolivr.dev/" target="_blank" rel="noreferrer">
             Feito com ♡ por Ryan Oliveira
             <span />
           </a>

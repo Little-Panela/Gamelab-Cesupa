@@ -14,7 +14,7 @@ import { Footer } from "../../components/Footer";
 
 import gammingAnimate from "../../assets/gaming-animate.svg";
 
-import { Link } from "react-scroll";
+import { Link, Element } from "react-scroll";
 
 export interface Project {
   _id: string;
@@ -31,21 +31,22 @@ export function Main() {
   return (
     <Container>
       <main>
+      <Element name="Home"></Element>
         <Navbar />
         <IntroductionContent>
           <IntroductionContentContainer>
             <LeftHome>
-              <Link to="home" smooth={true}>
+              <Link to="Home" smooth={true}>
                 <h1>
                   Game<span>Lab</span>
                 </h1>
                 <h2>Grupo de Desenvolvimento de Games do CESUPA.</h2>
               </Link>
               <div>
-                <Link to="" smooth={true}>
-                  <button>Ver Projetos</button>
+                <Link to="Projects" smooth={true}>
+                  <button>Veja Nossos Projetos</button>
                 </Link>
-                <Link to="about" smooth={true}>
+                <Link to="About" smooth={true}>
                   <a href="#">Saiba Mais</a>
                 </Link>
               </div>

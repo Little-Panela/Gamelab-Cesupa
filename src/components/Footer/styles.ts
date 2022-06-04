@@ -28,27 +28,27 @@ export const Copyright = styled.div`
     font-size: 0.8rem;
     color: var(--text-secondary);
     text-align: left;
-    a{
-    text-decoration: none;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: all 0.2s ease-in;
-    span {
-      width: 0;
-      height: 2px;
-      background-color: red;
-      transition: width 0.2s;
-    }
+    a {
+      text-decoration: none;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: all 0.2s ease-in;
+      span {
+        width: 0;
+        height: 2px;
+        background-color: red;
+        transition: width 0.2s;
+      }
 
-    &:hover span {
-      width: 100%;
-    }
+      &:hover span {
+        width: 100%;
+      }
     }
     @media (max-width: 768px) {
-    text-align: center;
-  }
+      text-align: center;
+    }
   }
 
   div {

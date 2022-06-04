@@ -13,7 +13,7 @@ export const Container = styled.div`
     font-size: 2.2rem;
   }
 `;
- 
+
 export const ProjectsContainer = styled.div`
   min-width: 90%;
   max-width: calc(100% - 5rem);
@@ -43,8 +43,8 @@ export const ProjectsContainer = styled.div`
     .card {
       display: block;
       overflow: hidden;
-      border-radius: 10px;   
-      
+      border-radius: 10px;
+
       @media (max-width: 800px) {
         & {
           width: 100%;

@@ -8,10 +8,10 @@ import aula_gamelab from "../../assets/aula_gamelab.svg";
 export function About() {
   return (
     <>
-      <Element name="about"></Element>
+      <Element name="About"></Element>
       <AboutContent>
         <div>
-        <AboutLeft>
+          <AboutLeft>
             <h1>Sobre Nós</h1>
             <p>
               O Cesupa GameLab é um grupo de estudo e pesquisa que possibilita o
@@ -19,8 +19,7 @@ export function About() {
               computadores, lógica de programação e algoritmos computacionais em
               projetos reais.
               <br />
-              <br />
-              O nosso objetivo é desenvolver atividades de ensino,
+              <br />O nosso objetivo é desenvolver atividades de ensino,
               extensão, iniciação científica e pesquisa no âmbito da área de
               Desenvolvimento de Jogos Digitais e soluções gameficadas.
             </p>
@@ -34,7 +33,6 @@ export function About() {
             />
           </AboutRight>
         </div>
-        <Element name=""></Element>
       </AboutContent>
     </>
   );

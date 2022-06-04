@@ -29,12 +29,12 @@ export const ContactLeft = styled.div`
     p {
       display: flex;
       gap: 12px;
-       a {
-        font-family: 'Poppins', sans-serif;
+      a {
+        font-family: "Poppins", sans-serif;
         color: var(--text-secondary);
         font-weight: 400;
         text-decoration: none;
-    }
+      }
     }
     @media (max-width: 768px) {
       align-items: center;

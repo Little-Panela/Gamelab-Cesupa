@@ -3,7 +3,7 @@ import { NavbarContainer, Logo, Hamburger, Menu, Close } from "./styles";
 
 import { Link } from "react-scroll";
 
-import logo from "../../assets/logo-gamelab.png"
+import logo from "../../assets/logo-gamelab.png";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,10 +18,10 @@ export function Navbar() {
 
   return (
     <NavbarContainer>
-       <Link to="home" smooth={true} onClick={closeNavBar}>
-      <Logo href="">
-        <img src={logo} alt="logo_gamelab" />
-      </Logo>
+      <Link to="home" smooth={true} onClick={closeNavBar}>
+        <Logo href="">
+          <img src={logo} alt="logo_gamelab" />
+        </Logo>
       </Link>
 
       <Hamburger isOpen={isOpen} onClick={changeNavBarState}>
@@ -40,11 +40,11 @@ export function Navbar() {
       </Close>
 
       <Menu isOpen={isOpen}>
-        <Link to="home" smooth={true} onClick={closeNavBar}>
+        <Link to="Home" smooth={true} onClick={closeNavBar}>
           Início
           <span />
         </Link>
-        <Link to="about" smooth={true} onClick={closeNavBar}>
+        <Link to="About" smooth={true} onClick={closeNavBar}>
           Sobre
           <span />
         </Link>
@@ -52,7 +52,7 @@ export function Navbar() {
           Equipe
           <span />
         </Link>
-        <Link to="" smooth={true} onClick={closeNavBar}>
+        <Link to="Contact" smooth={true} onClick={closeNavBar}>
           Contato
           <span />
         </Link>

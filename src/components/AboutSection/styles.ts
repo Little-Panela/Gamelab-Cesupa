@@ -19,11 +19,11 @@ export const AboutContent = styled.div`
   img:nth-child(4) {
     margin-top: 55px;
   }
-  
+
   div {
     display: flex;
     flex-wrap: wrap;
-   
+
     margin-top: 21px;
 
     gap: 40px;
@@ -54,7 +54,7 @@ export const AboutLeft = styled.div`
     font-family: "Poppins";
     font-weight: 400;
     font-size: 1.1rem;
-    line-height: 1.40rem;
+    line-height: 1.4rem;
     margin: 0 2rem 3rem 2rem;
 
     max-width: 36.5rem;
