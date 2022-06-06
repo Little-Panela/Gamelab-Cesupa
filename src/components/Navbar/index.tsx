@@ -48,7 +48,7 @@ export function Navbar() {
           Sobre
           <span />
         </Link>
-        <Link to="" smooth={true} onClick={closeNavBar}>
+        <Link to="Team" smooth={true} onClick={closeNavBar}>
           Equipe
           <span />
         </Link>
