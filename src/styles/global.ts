@@ -15,17 +15,27 @@ export default createGlobalStyle`
         box-sizing: border-box;
     }
 
-    body::-webkit-scrollbar {
-        width: 0.25rem;
-    }
+    /* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--text-font) var(--button);
+}
 
-    body::-webkit-scrollbar-track {
-        background: var(--text-secondary);
-    }
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+  height: 10px;
+}
 
-    body::-webkit-scrollbar-thumb {
-        background: var(--background);
-    }
+*::-webkit-scrollbar-track {
+  background: var(--button);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--text-font);
+  border-radius: 20px;
+  border: 3px solid var(--button);
+}
     // font-size: 16px (Desktop)
     html {
         @media (max-width: 1080px) {

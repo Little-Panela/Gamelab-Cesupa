@@ -25,4 +25,8 @@ export const ProjectsContainer = styled.div`
   }
   scrollbar-width: thin;          /* "auto" or "thin" */
   scrollbar-color: var(--text-font) var(--button);
+  webkit-scrollbar {
+        width: 0.25rem;
+    }
+
 `;

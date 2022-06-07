@@ -1,10 +1,9 @@
-import { TeamContainer } from "./styles";
+import { TeamContainer, MembersDiv, MembersContainer } from "./styles";
 import { Element } from "react-scroll";
 import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
 import DefaultProfile from "../../assets/defaultProfile.jpg";
 
-import  {ProjectSection} from "../Test/index"
 
 const Coordinators = [
   {
@@ -18,6 +17,46 @@ const Coordinators = [
 ];
 
 const Members = [
+  {
+    name: "Default",
+    profile: DefaultProfile,
+  },
+  {
+    name: "Default",
+    profile: DefaultProfile,
+  },
+  {
+    name: "Default",
+    profile: DefaultProfile,
+  },
+  {
+    name: "Default",
+    profile: DefaultProfile,
+  },
+  {
+    name: "Default",
+    profile: DefaultProfile,
+  },
+  {
+    name: "Default",
+    profile: DefaultProfile,
+  },
+  {
+    name: "Default",
+    profile: DefaultProfile,
+  },
+  {
+    name: "Default",
+    profile: DefaultProfile,
+  },
+  {
+    name: "Default",
+    profile: DefaultProfile,
+  },
+  {
+    name: "Default",
+    profile: DefaultProfile,
+  },
   {
     name: "Default",
     profile: DefaultProfile,
@@ -65,7 +104,24 @@ export function Team(): JSX.Element {
           ))}
         </Stack>
         <h2 className="Members">Membros</h2>
-        <ProjectSection />
+        <MembersDiv>
+        <MembersContainer>
+          <div className="container">
+          <Stack direction="row" spacing={5}>
+            {Members.map((Members) => (
+              <div>
+                <Avatar
+                  alt={Members.name}
+                  src={Members.profile}
+                  sx={{ width: 122, height: 122 }}
+                />
+                <p>{Members.name}</p>
+              </div>
+            ))}
+            </Stack>
+          </div>
+        </MembersContainer>
+      </MembersDiv>
       </TeamContainer>
     </>
   );

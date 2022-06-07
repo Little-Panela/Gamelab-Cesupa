@@ -17,17 +17,6 @@ import gammingAnimate from "../../assets/gaming-animate.svg";
 
 import { Link, Element } from "react-scroll";
 
-export interface Project {
-  _id: string;
-  image: string;
-  title: string;
-  description: string;
-  participants: string;
-  github: string;
-  trello: string;
-  video: string;
-}
-
 export function Main() {
   return (
     <Container>

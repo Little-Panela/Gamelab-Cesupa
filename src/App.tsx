@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { Main } from './pages/Main/index'
 
 import GlobalStyle from "./styles/global";
