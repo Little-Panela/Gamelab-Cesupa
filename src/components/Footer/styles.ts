@@ -14,7 +14,10 @@ export const FooterContainer = styled.footer`
   background: var(--button);
 
   @media (max-width: 768px) {
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
   }
 `;
 

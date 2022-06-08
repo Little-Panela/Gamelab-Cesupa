@@ -1,0 +1,100 @@
+{
+  "Coordinators": [
+    {
+      "name": "Pedro Girotto",
+      "profile": "../src/assets/defaultProfile.jpg"
+    },
+    {
+      "name": "Ricardo Casseb",
+      "profile": "../src/assets/defaultProfile.jpg"
+    }
+  ],
+  "Members": [
+    {
+      "name": "Default",
+      "profile": "../src/assets/defaultProfile.jpg"
+    },
+    {
+      "name": "Default",
+      "profile": "../src/assets/defaultProfile.jpg"
+    },
+    {
+      "name": "Default",
+      "profile": "../src/assets/defaultProfile.jpg"
+    },
+    {
+      "name": "Default",
+      "profile": "../src/assets/defaultProfile.jpg"
+    },
+    {
+      "name": "Default",
+      "profile": "../src/assets/defaultProfile.jpg"
+    },
+    {
+      "name": "Default",
+      "profile": "../src/assets/defaultProfile.jpg"
+    },
+    {
+      "name": "Default",
+      "profile": "../src/assets/defaultProfile.jpg"
+    },
+    {
+      "name": "Default",
+      "profile": "../src/assets/defaultProfile.jpg"
+    },
+    {
+      "name": "Default",
+      "profile": "../src/assets/defaultProfile.jpg"
+    },
+    {
+      "name": "Default",
+      "profile": "../src/assets/defaultProfile.jpg"
+    },
+    {
+      "name": "Default",
+      "profile": "../src/assets/defaultProfile.jpg"
+    },
+    {
+      "name": "Default",
+      "profile": "../src/assets/defaultProfile.jpg"
+    },
+    {
+      "name": "Default",
+      "profile": "../src/assets/defaultProfile.jpg"
+    },
+    {
+      "name": "Default",
+      "profile": "../src/assets/defaultProfile.jpg"
+    },
+    {
+      "name": "Default",
+      "profile": "../src/assets/defaultProfile.jpg"
+    },
+    {
+      "name": "Default",
+      "profile": "../src/assets/defaultProfile.jpg"
+    }
+  ],
+  "Project": [
+    {
+      "iframeLink": "https://itch.io/embed/1540590",
+      "aLink": "https://cesupagamelab.itch.io/blitroidz",
+      "subtitle": "BlitzRoids by Cesupa GameLab"
+    },
+    {
+      "iframeLink": "https://itch.io/embed/1540739",
+      "aLink": "https://cesupagamelab.itch.io/barrelroll",
+      "subtitle": "Barrel Roll by Cesupa GameLab"
+    },
+    {
+      "iframeLink": "https://itch.io/embed/1525704",
+      "aLink": "https://cesupagamelab.itch.io/office-boy",
+      "subtitle": "Office Boy by Cesupa GameLab"
+    },
+    {
+      "iframeLink": "https://itch.io/embed/1505014",
+      "aLink": "https://cesupagamelab.itch.io/psicopato-a-origem",
+      "subtitle": "Psicopato: A origem by Cesupa GameLab"
+    }
+  ]
+}

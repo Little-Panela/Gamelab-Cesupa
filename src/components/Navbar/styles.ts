@@ -16,27 +16,20 @@ export const NavbarContainer = styled.nav`
 
   padding: 2rem 5rem 0rem 5rem;
 
+  img {
+    margin-right: 0.375rem;
+    height: 3.4rem;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
   @media (max-width: 768px) {
     justify-content: end;
     align-items: center;
     height: 100vh;
     padding: 0rem;
-  }
-`;
-
-export const Logo = styled.a`
-  display: flex;
-  align-items: center;
-
-  text-decoration: none;
-
-  img {
-    margin-right: 0.375rem;
-    height: 3.4rem;
-  }
-
-  @media (max-width: 768px) {
-    display: none;
   }
 `;
 
@@ -54,6 +47,9 @@ export const Menu = styled.div<MenuProps>`
   a {
     text-decoration: none;
     color: white;
+    .active {
+      color: red;
+    }
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,11 +76,10 @@ export const Menu = styled.div<MenuProps>`
     width: 100%;
     height: ${({ isOpen }) => (isOpen ? "100%" : "0")};
     position: ${({ isOpen }) => (isOpen ? "fixed" : "null")};
-    z-index: ${({ isOpen }) => (isOpen ? "999" : "null")};
+    z-index: ${({ isOpen }) => (isOpen ? "998" : "null")};
     top: ${({ isOpen }) => (isOpen ? "0" : "null")};
     left: ${({ isOpen }) => (isOpen ? "0" : "null")};
     transition: max-height 0.3s ease-in;
-
     background: var(--background);
   }
 `;
@@ -99,13 +94,12 @@ export const Hamburger = styled.div<MenuProps>`
     height: 2px;
     width: 25px;
     background-color: #ffffff;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
     border-radius: 5px;
   }
 
   @media (max-width: 768px) {
     display: flex;
-
     padding: 2rem 2rem;
 
     display: ${({ isOpen }) => (isOpen ? "none" : "flex")};
@@ -113,7 +107,7 @@ export const Hamburger = styled.div<MenuProps>`
 `;
 
 export const Close = styled.div<MenuProps>`
-  position: absolute;
+  position: fixed;
   right: 2rem;
   font-family: "Poppins";
   font-style: normal;

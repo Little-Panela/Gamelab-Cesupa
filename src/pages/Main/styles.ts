@@ -9,7 +9,6 @@ export const Container = styled.div`
   @media only screen and (max-width: 1200px) {
     main {
       margin-left: 0;
-      margin-bottom: 5rem;
     }
 
     nav {
@@ -17,11 +16,6 @@ export const Container = styled.div`
       width: 100vw;
       height: 5rem;
       z-index: 999;
-
-      .moreinfo,
-      .cesupa-logo-nav {
-        display: none;
-      }
 
       ul {
         flex-direction: row;
@@ -106,7 +100,8 @@ export const LeftHome = styled.div`
     text-shadow: 2px 2px 8px #00000099;
   }
 
-  a {
+  .aTag {
+    text-decoration: underline;
     text-underline-offset: 0.2rem;
     color: var(--text-secondary);
   }

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavbarContainer, Logo, Hamburger, Menu, Close } from "./styles";
+import { NavbarContainer, Hamburger, Menu, Close } from "./styles";
 
 import { Link } from "react-scroll";
 
@@ -19,9 +19,7 @@ export function Navbar() {
   return (
     <NavbarContainer>
       <Link to="home" smooth={true} onClick={closeNavBar}>
-        <Logo href="">
-          <img src={logo} alt="logo_gamelab" />
-        </Logo>
+        <img src={logo} alt="logo_gamelab" />
       </Link>
 
       <Hamburger isOpen={isOpen} onClick={changeNavBarState}>
@@ -30,13 +28,8 @@ export function Navbar() {
         <span />
       </Hamburger>
 
-      <Close
-        isOpen={isOpen}
-        onClick={() => {
-          setIsOpen((curr) => !curr);
-        }}
-      >
-        X
+      <Close isOpen={isOpen} onClick={changeNavBarState}>
+        x
       </Close>
 
       <Menu isOpen={isOpen}>

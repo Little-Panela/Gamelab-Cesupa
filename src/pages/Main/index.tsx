@@ -37,7 +37,7 @@ export function Main() {
                   <button>Veja Nossos Projetos</button>
                 </Link>
                 <Link to="About" smooth={true}>
-                  <a href="#">Saiba Mais</a>
+                  <a className="aTag">Saiba Mais</a>
                 </Link>
               </div>
             </LeftHome>
@@ -58,7 +58,6 @@ export function Main() {
         <Contact />
         <Divider />
       </main>
-
       <Footer />
     </Container>
   );

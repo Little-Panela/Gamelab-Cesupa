@@ -28,7 +28,7 @@ export function About() {
             <img src={equipe_gamelab} alt="Equipe Gamelab" />
             <img
               src={aula_gamelab}
-              alt="Foto dos Ganhadores"
+              alt="Foto de um evento do gamelab, Campeonato de Level Design"
               className="secondPhoto"
             />
           </AboutRight>
