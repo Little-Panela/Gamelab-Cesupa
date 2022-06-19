@@ -2,77 +2,60 @@
   "Coordinators": [
     {
       "name": "Pedro Girotto",
-      "profile": "../src/assets/defaultProfile.jpg"
+      "profile": "../src/assets/Coordinators/PedroGirotto.svg",
+      "LinkedIn": "https://www.linkedin.com/in/pedro-girotto-713b85131/"
     },
     {
       "name": "Ricardo Casseb",
-      "profile": "../src/assets/defaultProfile.jpg"
+      "profile": "../src/assets/Coordinators/RicardoCasseb.svg",
+      "LinkedIn": "https://www.linkedin.com/in/ricardocasseb/"
     }
   ],
   "Members": [
     {
-      "name": "Default",
-      "profile": "../src/assets/defaultProfile.jpg"
+      "name": "Elielson Barbosa",
+      "profile": "../src/assets/Members/ElielsonBarbosa.svg",
+      "LinkedIn": "https://www.linkedin.com/in/elielson-barbosa/"
     },
     {
-      "name": "Default",
-      "profile": "../src/assets/defaultProfile.jpg"
+      "name": "Fábio Monteiro",
+      "profile": "../src/assets/Members/FabioMonteiro.svg",
+      "LinkedIn": "https://www.linkedin.com/in/f%C3%A1bio-monteiro-b53b51241/"
     },
     {
-      "name": "Default",
-      "profile": "../src/assets/defaultProfile.jpg"
+      "name": "Letícia Keuffer",
+      "profile": "../src/assets/Members/LeticiaKeuffer.svg",
+      "LinkedIn": "https://www.linkedin.com/in/let%C3%ADcia-keuffer-b5228a234/"
     },
     {
-      "name": "Default",
-      "profile": "../src/assets/defaultProfile.jpg"
+      "name": "Leonardo Peixoto",
+      "profile": "../src/assets/Members/LeonardoPeixoto.svg",
+      "LinkedIn": "https://www.linkedin.com/in/leonardo-peixoto-e-silva-54a013225/"
     },
     {
-      "name": "Default",
-      "profile": "../src/assets/defaultProfile.jpg"
+      "name": "Pedro Benitah",
+      "profile": "../src/assets/Members/PedroBenitah.svg",
+      "LinkedIn": "https://www.linkedin.com/in/pedro-melo-25413120b/"
     },
     {
-      "name": "Default",
-      "profile": "../src/assets/defaultProfile.jpg"
+      "name": "Ryan Oliveira",
+      "profile": "../src/assets/Members/RyanOliveira.svg",
+      "LinkedIn": "https://www.linkedin.com/in/ryanolivr/"
     },
     {
-      "name": "Default",
-      "profile": "../src/assets/defaultProfile.jpg"
+      "name": "Roberto Bezarra",
+      "profile": "../src/assets/Members/RobertoCastro.svg",
+      "LinkedIn": "https://www.linkedin.com/in/roberto-castro-217341234/"
     },
     {
-      "name": "Default",
-      "profile": "../src/assets/defaultProfile.jpg"
+      "name": "Vinícius Figueiredo",
+      "profile": "../src/assets/Members/ViniciusFigueiredo.svg",
+      "LinkedIn": "https://www.linkedin.com/in/vin%C3%ADcius-farias-582b43218/"
     },
     {
-      "name": "Default",
-      "profile": "../src/assets/defaultProfile.jpg"
-    },
-    {
-      "name": "Default",
-      "profile": "../src/assets/defaultProfile.jpg"
-    },
-    {
-      "name": "Default",
-      "profile": "../src/assets/defaultProfile.jpg"
-    },
-    {
-      "name": "Default",
-      "profile": "../src/assets/defaultProfile.jpg"
-    },
-    {
-      "name": "Default",
-      "profile": "../src/assets/defaultProfile.jpg"
-    },
-    {
-      "name": "Default",
-      "profile": "../src/assets/defaultProfile.jpg"
-    },
-    {
-      "name": "Default",
-      "profile": "../src/assets/defaultProfile.jpg"
-    },
-    {
-      "name": "Default",
-      "profile": "../src/assets/defaultProfile.jpg"
+      "name": "Vítor Ramôa",
+      "profile": "../src/assets/Members/VitorRamoa.svg",
+      "LinkedIn": "https://www.linkedin.com/in/v%C3%ADtor-ram%C3%B4a-57909a239/"
     }
   ],
   "Project": [

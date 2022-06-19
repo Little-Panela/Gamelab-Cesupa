@@ -2,6 +2,11 @@ import { TeamContainer, MembersDiv, MembersContainer } from "./styles";
 import { Element } from "react-scroll";
 import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+
+import defaultProfile from "../../assets/defaultProfile.jpg";
+
+import logoLinkedin from "../../assets/logoLinkedin.png";
 
 import db from "../../../lib/db.json";
 
@@ -15,11 +20,16 @@ export function Team(): JSX.Element {
         <Stack direction="row" spacing={5}>
           {db.Coordinators.map((Coordinators) => (
             <div>
-              <Avatar
-                alt={Coordinators.name}
-                src={Coordinators.profile}
-                sx={{ width: 122, height: 122 }}
-              />
+              <div className="card">
+                <img src={Coordinators.profile} alt={Coordinators.name} loading="lazy"/>
+                <div className="details">
+                  <div>
+                    <a href={Coordinators.LinkedIn} target="_blank">
+                      <img src={logoLinkedin} alt="Logo Do LinkedIn" />
+                    </a>
+                  </div>
+                </div>
+              </div>
               <p>{Coordinators.name}</p>
               <p>Professor</p>
             </div>
@@ -32,12 +42,17 @@ export function Team(): JSX.Element {
               <Stack direction="row" spacing={5}>
                 {db.Members.map((Members) => (
                   <div>
-                    <Avatar
-                      alt={Members.name}
-                      src={Members.profile}
-                      sx={{ width: 122, height: 122 }}
-                    />
-                    <p>{Members.name}</p>
+                    <div className="card">
+                      <img src={Members.profile} alt={Members.name} loading="lazy"/>
+                      <div className="details">
+                        <div>
+                          <a href={Members.LinkedIn} target="_blank">
+                            <img src={logoLinkedin} alt="Logo Do LinkedIn" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <p className="tagP">{Members.name}</p>
                   </div>
                 ))}
               </Stack>
