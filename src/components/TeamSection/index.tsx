@@ -1,6 +1,7 @@
 import { TeamContainer, MembersDiv, MembersContainer } from "./styles";
 import { Element } from "react-scroll";
 import Stack from "@mui/material/Stack";
+
 import logoLinkedin from "../../assets/logoLinkedin.png";
 
 import db from "../../../lib/db.json";
