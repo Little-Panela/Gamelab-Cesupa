@@ -1,11 +1,6 @@
 import { TeamContainer, MembersDiv, MembersContainer } from "./styles";
 import { Element } from "react-scroll";
-import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-
-import defaultProfile from "../../assets/defaultProfile.jpg";
-
 import logoLinkedin from "../../assets/logoLinkedin.png";
 
 import db from "../../../lib/db.json";

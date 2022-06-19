@@ -2,59 +2,59 @@
   "Coordinators": [
     {
       "name": "Pedro Girotto",
-      "profile": "../src/assets/Coordinators/PedroGirotto.svg",
+      "profile": "../src/assets/PedroGirotto.svg",
       "LinkedIn": "https://www.linkedin.com/in/pedro-girotto-713b85131/"
     },
     {
       "name": "Ricardo Casseb",
-      "profile": "../src/assets/Coordinators/RicardoCasseb.svg",
+      "profile": "../src/assets/RicardoCasseb.svg",
       "LinkedIn": "https://www.linkedin.com/in/ricardocasseb/"
     }
   ],
   "Members": [
     {
       "name": "Elielson Barbosa",
-      "profile": "../src/assets/Members/ElielsonBarbosa.svg",
+      "profile": "../src/assets/ElielsonBarbosa.svg",
       "LinkedIn": "https://www.linkedin.com/in/elielson-barbosa/"
     },
     {
       "name": "Fábio Monteiro",
-      "profile": "../src/assets/Members/FabioMonteiro.svg",
+      "profile": "../src/assets/FabioMonteiro.svg",
       "LinkedIn": "https://www.linkedin.com/in/f%C3%A1bio-monteiro-b53b51241/"
     },
     {
       "name": "Letícia Keuffer",
-      "profile": "../src/assets/Members/LeticiaKeuffer.svg",
+      "profile": "../src/assets/LeticiaKeuffer.svg",
       "LinkedIn": "https://www.linkedin.com/in/let%C3%ADcia-keuffer-b5228a234/"
     },
     {
       "name": "Leonardo Peixoto",
-      "profile": "../src/assets/Members/LeonardoPeixoto.svg",
+      "profile": "../src/assets/LeonardoPeixoto.svg",
       "LinkedIn": "https://www.linkedin.com/in/leonardo-peixoto-e-silva-54a013225/"
     },
     {
       "name": "Pedro Benitah",
-      "profile": "../src/assets/Members/PedroBenitah.svg",
+      "profile": "../src/assets/PedroBenitah.svg",
       "LinkedIn": "https://www.linkedin.com/in/pedro-melo-25413120b/"
     },
     {
       "name": "Ryan Oliveira",
-      "profile": "../src/assets/Members/RyanOliveira.svg",
+      "profile": "../src/assets/RyanOliveira.svg",
       "LinkedIn": "https://www.linkedin.com/in/ryanolivr/"
     },
     {
       "name": "Roberto Bezarra",
-      "profile": "../src/assets/Members/RobertoCastro.svg",
+      "profile": "../src/assets/RobertoCastro.svg",
       "LinkedIn": "https://www.linkedin.com/in/roberto-castro-217341234/"
     },
     {
       "name": "Vinícius Figueiredo",
-      "profile": "../src/assets/Members/ViniciusFigueiredo.svg",
+      "profile": "../src/assets/ViniciusFigueiredo.svg",
       "LinkedIn": "https://www.linkedin.com/in/vin%C3%ADcius-farias-582b43218/"
     },
     {
       "name": "Vítor Ramôa",
-      "profile": "../src/assets/Members/VitorRamoa.svg",
+      "profile": "../src/assets/VitorRamoa.svg",
       "LinkedIn": "https://www.linkedin.com/in/v%C3%ADtor-ram%C3%B4a-57909a239/"
     }
   ],
