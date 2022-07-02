@@ -45,6 +45,7 @@ export function Main() {
               src={gammingAnimate}
               title="Computer illustrations by Storyset"
               alt="ilustração"
+              loading="lazy"
             />
           </IntroductionContentContainer>
         </IntroductionContent>

@@ -26,46 +26,49 @@ export const TeamContainer = styled.div`
   }
 
   .card {
-        height: 122px;
-        width: 122px;
-        overflow: hidden;
-        position: relative;
-        cursor: pointer;
-        border-radius: 100%;
-        border: 2px solid var(--text-font);
+    height: 122px;
+    width: 122px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    border-radius: 100%;
+    border: 2px solid var(--text-font);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
 
-        img {
-        height: 100%;
-        width: 100%;
-        }
+    img {
+      height: inherit;
+      width: inherit;
+      vertical-align: middle;
     }
+  }
 
-    .card:hover .details {
-        opacity: 70%;
-        height: 100%;
-    }
+  .card:hover .details {
+    opacity: 70%;
+    height: 100%;
+  }
 
-    .details {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        height: 0%;
-        background: rgba(0, 0, 0, 0.9);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 10px 0;
-        opacity: 0;
-        transition: 0.5s ease;
-      
-        img {
-          height: 30px;
-          width: 30px;
-        }
+  .details {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    opacity: 0;
+    transition: 0.5s ease;
+
+    img {
+      height: 30px;
+      width: 30px;
+      vertical-align: middle;
     }
-`
+  }
+`;
 
 export const MembersDiv = styled.div`
   display: flex;
@@ -85,15 +88,13 @@ export const MembersContainer = styled.div`
   background-color: transparent;
 
   border-radius: 5px;
-  
+
   .container {
     display: flex;
     justify-content: flex-start;
-    
 
-    .tagP{
-      margin-top: 5px;   
+    .tagP {
+      margin-top: 5px;
     }
   }
 `;
-

@@ -1,12 +1,52 @@
+import { gql, useQuery } from "@apollo/client";
 import { TeamContainer, MembersDiv, MembersContainer } from "./styles";
 import { Element } from "react-scroll";
 import Stack from "@mui/material/Stack";
+import Skeleton from "@mui/material/Skeleton";
 
 import logoLinkedin from "../../assets/logoLinkedin.png";
 
-import db from "../../../lib/db.json";
+const GET_USERS_QUERY = gql`
+  query {
+    members {
+      linkedInURL
+      name
+      avatar {
+        url
+      }
+    }
+    teachers {
+      bio
+      linkedInURL
+      name
+      avatar {
+        url
+      }
+    }
+  }
+`;
+
+interface GetUsersResponse {
+  members: {
+    name: string;
+    linkedInURL: string;
+    avatar: {
+      url: string;
+    };
+  }[];
+  teachers: {
+    name: string;
+    bio: string;
+    linkedInURL: string;
+    avatar: {
+      url: string;
+    };
+  }[];
+}
 
 export function Team(): JSX.Element {
+  const { data } = useQuery<GetUsersResponse>(GET_USERS_QUERY);
+
   return (
     <>
       <Element name="Team"></Element>
@@ -14,20 +54,68 @@ export function Team(): JSX.Element {
         <h1>Nossa Equipe</h1>
         <h2>Coordenadores</h2>
         <Stack direction="row" spacing={5}>
-          {db.Coordinators.map((Coordinators) => (
+          {!data && (
+            <>
+              <div>
+                <Skeleton
+                  sx={{ bgcolor: "white", opacity: 0.5 }}
+                  variant="circular"
+                  width={120}
+                  height={120}
+                />
+                <Skeleton
+                  variant="text"
+                  sx={{ bgcolor: "white", opacity: 0.5 }}
+                  width={122}
+                  height={24}
+                />
+                <Skeleton
+                  variant="text"
+                  sx={{ bgcolor: "white", opacity: 0.5 }}
+                  width={100}
+                  height={24}
+                />
+              </div>
+              <div>
+                <Skeleton
+                  sx={{ bgcolor: "white", opacity: 0.5 }}
+                  variant="circular"
+                  width={120}
+                  height={120}
+                />
+                <Skeleton
+                  variant="text"
+                  sx={{ bgcolor: "white", opacity: 0.5 }}
+                  width={122}
+                  height={24}
+                />
+                <Skeleton
+                  variant="text"
+                  sx={{ bgcolor: "white", opacity: 0.5 }}
+                  width={100}
+                  height={24}
+                />
+              </div>
+            </>
+          )}
+          {data?.teachers.map((teachers) => (
             <div>
               <div className="card">
-                <img src={Coordinators.profile} alt={Coordinators.name} loading="lazy"/>
+                <img
+                  src={teachers.avatar.url}
+                  alt={teachers.name}
+                  loading="lazy"
+                />
                 <div className="details">
                   <div>
-                    <a href={Coordinators.LinkedIn} target="_blank">
+                    <a href={teachers.linkedInURL} target="_blank">
                       <img src={logoLinkedin} alt="Logo Do LinkedIn" />
                     </a>
                   </div>
                 </div>
               </div>
-              <p>{Coordinators.name}</p>
-              <p>Professor</p>
+              <p>{teachers.name}</p>
+              <p>{teachers.bio}</p>
             </div>
           ))}
         </Stack>
@@ -36,13 +124,133 @@ export function Team(): JSX.Element {
           <MembersContainer>
             <div className="container">
               <Stack direction="row" spacing={5}>
-                {db.Members.map((Members) => (
+                {!data && (
+                  <>
+                    <div>
+                      <Skeleton
+                        sx={{ bgcolor: "white", opacity: 0.5 }}
+                        variant="circular"
+                        width={120}
+                        height={120}
+                      />
+                      <Skeleton
+                        variant="text"
+                        sx={{ bgcolor: "white", opacity: 0.5 }}
+                        width={122}
+                        height={24}
+                      />
+                    </div>
+                    <div>
+                      <Skeleton
+                        sx={{ bgcolor: "white", opacity: 0.5 }}
+                        variant="circular"
+                        width={120}
+                        height={120}
+                      />
+                      <Skeleton
+                        variant="text"
+                        sx={{ bgcolor: "white", opacity: 0.5 }}
+                        width={122}
+                        height={24}
+                      />
+                    </div>
+                    <div>
+                      <Skeleton
+                        sx={{ bgcolor: "white", opacity: 0.5 }}
+                        variant="circular"
+                        width={120}
+                        height={120}
+                      />
+                      <Skeleton
+                        variant="text"
+                        sx={{ bgcolor: "white", opacity: 0.5 }}
+                        width={122}
+                        height={24}
+                      />
+                    </div>
+                    <div>
+                      <Skeleton
+                        sx={{ bgcolor: "white", opacity: 0.5 }}
+                        variant="circular"
+                        width={120}
+                        height={120}
+                      />
+                      <Skeleton
+                        variant="text"
+                        sx={{ bgcolor: "white", opacity: 0.5 }}
+                        width={122}
+                        height={24}
+                      />
+                    </div>
+                    <div>
+                      <Skeleton
+                        sx={{ bgcolor: "white", opacity: 0.5 }}
+                        variant="circular"
+                        width={120}
+                        height={120}
+                      />
+                      <Skeleton
+                        variant="text"
+                        sx={{ bgcolor: "white", opacity: 0.5 }}
+                        width={122}
+                        height={24}
+                      />
+                    </div>
+                    <div>
+                      <Skeleton
+                        sx={{ bgcolor: "white", opacity: 0.5 }}
+                        variant="circular"
+                        width={120}
+                        height={120}
+                      />
+                      <Skeleton
+                        variant="text"
+                        sx={{ bgcolor: "white", opacity: 0.5 }}
+                        width={122}
+                        height={24}
+                      />
+                    </div>
+                    <div>
+                      <Skeleton
+                        sx={{ bgcolor: "white", opacity: 0.5 }}
+                        variant="circular"
+                        width={120}
+                        height={120}
+                      />
+                      <Skeleton
+                        variant="text"
+                        sx={{ bgcolor: "white", opacity: 0.5 }}
+                        width={122}
+                        height={24}
+                      />
+                    </div>
+                    <div>
+                      <Skeleton
+                        sx={{ bgcolor: "white", opacity: 0.5 }}
+                        variant="circular"
+                        width={120}
+                        height={120}
+                      />
+                      <Skeleton
+                        variant="text"
+                        sx={{ bgcolor: "white", opacity: 0.5 }}
+                        width={122}
+                        height={24}
+                      />
+                    </div>
+                  </>
+                )}
+                {data?.members.map((Members) => (
                   <div>
                     <div className="card">
-                      <img src={Members.profile} alt={Members.name} loading="lazy"/>
+                      <img
+                        src={Members.avatar.url}
+                        alt={Members.name}
+                        loading="lazy"
+                      />
                       <div className="details">
                         <div>
-                          <a href={Members.LinkedIn} target="_blank">
+                          <a href={Members.linkedInURL} target="_blank">
                             <img src={logoLinkedin} alt="Logo Do LinkedIn" />
                           </a>
                         </div>

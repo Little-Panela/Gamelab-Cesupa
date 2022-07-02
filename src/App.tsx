@@ -1,13 +1,14 @@
-import { Main } from './pages/Main/index'
+import { ApolloProvider } from "@apollo/client";
+import { client } from "./lib/apollo";
+import { Main } from "./pages/Main/index";
 
 import GlobalStyle from "./styles/global";
 
 export function App() {
   return (
-    <>
-      <Main />
-      <GlobalStyle />
-    </>
-  )
+      <ApolloProvider client={client}>
+        <Main />
+        <GlobalStyle />
+      </ApolloProvider>
+  );
 }
-
